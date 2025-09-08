@@ -5,7 +5,7 @@ format:
   revealjs:
     footer: "Footer text"
 
-# Based on 
+# Based on https://quarto.org/docs/presentations/revealjs/
 ---
 
 # In the morning ^[A footnote]

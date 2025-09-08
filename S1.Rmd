@@ -19,3 +19,10 @@ Viewing html generated files
 browseURL("basic-example.html")
 ```
 
+Open folder on RStudio
+
+```{r}
+rstudioapi::openProject("~/github/foldername")
+```
+
+
