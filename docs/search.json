@@ -2,57 +2,106 @@
   {
     "objectID": "DTNWebsite.html#why-quarto-1",
     "href": "DTNWebsite.html#why-quarto-1",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "Why Quarto?",
     "text": "Why Quarto?\n\n\n\n\nOpen-source\nDocument oriented\n\n\n\n\n📄 index.qmd\n📁 info\n📄 info/accommodation.qmd\n📄 info/contacts.qmd\n📄 info/gettingAround.qmd\n📁 forum\n📄 forum/day1.qmd\n📄 forum/day2.qmd\n📄 forum/day3.qmd"
   },
   {
     "objectID": "DTNWebsite.html#why-quarto-2",
     "href": "DTNWebsite.html#why-quarto-2",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "Why Quarto?",
     "text": "Why Quarto?\n\n\n\nOpen-source\nDocument oriented\nNo coding required\n\n\n\nEasy to write, easy to read\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics*, **bold**, ***bold italics***\nitalics, bold, bold italics\n\n\n### Heading 3\nHeading 3\n\n\n- Bullet point\n\nBullet point\n\n\n\n[Link text](https://example.com)\nLink text"
   },
   {
     "objectID": "DTNWebsite.html#why-quarto-3",
     "href": "DTNWebsite.html#why-quarto-3",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "Why Quarto?",
     "text": "Why Quarto?\n\n\n\nOpen-source\nDocument oriented\nNo coding required\nFunctional elements built-in\n\n\n\n\n\n\n\nTop navigation\n\n\nwebsite:\n  navbar:\n    background: primary\n    search: true\n    left:\n      - text: \"Home\"\n        href: index.qmd\n      - talks.qmd\n      - about.qmd \n\n\n\n\n\nSidebar\n\n\nwebsite:\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - text: \"Introduction\"\n        href: introduction.qmd\n\n\n\n\n\nBuilt-in search\n\n\nwebsite:\n  navbar:\n    search: true"
   },
   {
     "objectID": "DTNWebsite.html#why-quarto-4",
     "href": "DTNWebsite.html#why-quarto-4",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "Why Quarto?",
     "text": "Why Quarto?\n\n\n\nOpen-source\nDocument oriented\nNo coding required\nFunctional elements built-in\nGitHub pages ready\n\n\n\n$ quarto publish gh-pages\nu-shift.github.io/DTNLisbon"
   },
   {
     "objectID": "DTNWebsite.html#section-1",
     "href": "DTNWebsite.html#section-1",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "",
     "text": "Plain text markdown info/venue.qmd\n---\ntitle: \"Venue\"\nformat:\n  html:\n    css: ../styles/info.css\n\n---\n\nThe DTN Annual Forum 2025 will be hosted at Institute of Geography and Spatial Planning (IGOT). \nIt is located in the heart of Lisbon city and inside University of Lisbon campus, accessible by \nseveral transport modes. For more details on how to [get to Lisbon](/info/gettingToLisbon.html), \n[to the venue](/info/gettingHere.html) and [around the city](/info/gettingAround.html), check the\nrespective pages.\n\n![](https://www.igot.ulisboa.pt/sites/default/files/styles/imagem_banner_grande/public/images/\nimage_focal_point/2022-09/258-9487dbb71c4495cae503c1c2fc4f2c68.png?h=7097b478&itok=jzGbW0-5)\n{.preview-image}\n\n\nSidebar for simpler navigation _quarto.yml\nwebsite:\n  sidebar:\n    - id: info\n      title: \"Practical info\"\n      collapse-level: 2\n      contents:\n        - info/venue.qmd\n        - info/gettingHere.qmd\n        - info/gettingAround.qmd\n        - info/gettingToLisbon.qmd\n        - info/accommodation.qmd\n        - info/guides.qmd\n\n\nStyle improvements styles/theme.scss\n.sidebar-item {\n    border: 1px solid #cd7eabff;\n    border-radius: 32px;\n    padding: 6px;\n    padding-left: 12px;\n    text-wrap: wrap;\n\n    &:has(a.active) {background-color: #cd7eabff;}\n    &:has(a.active) .sidebar-item-text span {color: #ffffff!important;}\n    &:hover{text-decoration: underline;}\n\n    .active {font-weight: bold;}\n\n    .sidebar-item-text {\n        span {color: black!important;}\n    }\n}"
   },
   {
     "objectID": "DTNWebsite.html#section-2",
     "href": "DTNWebsite.html#section-2",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "",
     "text": "Plain text markdown forum/day1\n---\ntitle: 10th Sept. (Wednesday)\nimage: \"/images/backgrounds/dtn.png\"\nformat:\n  html:\n    css: ../styles/schedule.css\n---\n\n| |  |\n| --- | ---- |\n| 8:00 - 9:00 | &lt;span class=\"event-outline-blue\"&gt;&lt;/span&gt; Registration / coffee\n| 9:00        | &lt;span class=\"event-outline-blue\"&gt;&lt;/span&gt; Welcome \n| 09:30       | &lt;span class=\"event-filled-green\"&gt;&lt;/span&gt; Think! Data won’t tell the full\n| 10:15       | &lt;span class=\"event-outline-blue\"&gt;&lt;/span&gt; Coffee break \n| 10:45       | &lt;span class=\"event-filled-orange size-2\"&gt;&lt;/span&gt; PhD poster pitching \n| 12:15       | &lt;span class=\"event-outline-blue\"&gt;&lt;/span&gt; Lunch           |\n| 14:00       | &lt;span class=\"event-filled-blue size-2\"&gt;&lt;/span&gt; Lisbon Public Transit Experience\n\n\nStyle improvements styles/schedule.css\ntable td:has(.event-outline-blue) {\n    border: 1px solid #0798C6 !important;\n}\ntable td:has(.event-filled-green) {\n    background-color: #9Cb380 !important;\n    color: #fff!important;\n}\ntable td:has(.event-filled-orange) {\n    background-color: #FF7F51 !important;\n    color: #fff;\n}\ntable td:has(.event-filled-blue) {\n    color: #fff!important;\n    background-color: #0798C6 !important;\n}"
   },
   {
     "objectID": "DTNWebsite.html#section-3",
     "href": "DTNWebsite.html#section-3",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "",
     "text": "Plain text markdown based on built-in listing feature speakers/index.qmd\n---\ntitle: \"Speakers\"\nimage: \"/images/backgrounds/dtn.png\"\n\nformat:\n  html:\n    css: ../styles/speakers.css\n\nlisting:\n    type: grid\n    contents:\n    - path: /speakers/jcosteira.html\n      image: https://isr.tecnico.ulisboa.pt/jcosteira.jpg\n      title: João Paulo Costeira\n      description: \"\"\n      categories: []\n\n    - path: /speakers/zbent.html\n      image: https://nacto.org/wp-content/uploads/Bent-sq.jpg\n      title: Zabe Bent\n      description: \"\"\n      categories: []\n---"
   },
   {
     "objectID": "DTNWebsite.html#section-4",
     "href": "DTNWebsite.html#section-4",
-    "title": "Making a website with Quarto",
+    "title": "",
     "section": "",
     "text": "Plain text markdown, with a tweak 🤫 index.qmd\n---\ntitle: \"&lt;span class='text-hidden'&gt;EIT Urban Mobility DTN Annual Forum 2025&lt;/span&gt;&lt;img\"\nsidebar: false\nimage: \"/images/backgrounds/dtn.png\"\nformat:\n  html:\n    page-layout: custom\n    css: styles/home.css\n    include-before-body: html/home/header.html\n---\n\nThe DTN Annual Forum is the DTN’s annual flagship event that gathers experts, scholars, and industry\nleaders from around the world to discuss the latest advancements in urban mobility. This vibrant forum\noffers participants an opportunity to present their research, engage in insightful discussions, and\nfoster collaborations.\n\n\nAdding custom HTML before page content assets/timer.html\n\n\n\nCreated with ChatGPT"
+  },
+  {
+    "objectID": "paper.html",
+    "href": "paper.html",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "",
+    "text": "Loren ipsum…"
+  },
+  {
+    "objectID": "paper.html#introduction",
+    "href": "paper.html#introduction",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "",
+    "text": "Loren ipsum…"
+  },
+  {
+    "objectID": "paper.html#sec-data-methods",
+    "href": "paper.html#sec-data-methods",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "2 Methodology",
+    "text": "2 Methodology\nThe methodology is presented at Figure 1, adapted from Cordera et al. (2024).\n\n\n\n\n\n\nFigure 1: Methodology diagram"
+  },
+  {
+    "objectID": "paper.html#conclusion",
+    "href": "paper.html#conclusion",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "4 Conclusion",
+    "text": "4 Conclusion"
+  },
+  {
+    "objectID": "paper.html#references",
+    "href": "paper.html#references",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "References",
+    "text": "References\n\n\nCordera, Rubén, Margarita Novales, Alfonso Orro, Borja Alonso, and Luigi dell’Olio. 2024. “Good Practices on Transit Operation Design: Bus Drivers’ Perspective.” European Transport Research Review 16 (1): 36. https://doi.org/10.1186/s12544-024-00661-1."
+  },
+  {
+    "objectID": "paper.html#results",
+    "href": "paper.html#results",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "3 Results",
+    "text": "3 Results"
+  },
+  {
+    "objectID": "DTNWebsite.html#section",
+    "href": "DTNWebsite.html#section",
+    "title": "",
+    "section": "",
+    "text": "Plain text markdown info/venue.qmd\n---\ntitle: \"Venue\"\nformat:\n  html:\n    css: ../styles/info.css\n\n---\n\nThe DTN Annual Forum 2025 will be hosted at Institute of Geography and Spatial Planning (IGOT). \nIt is located in the heart of Lisbon city and inside University of Lisbon campus, accessible by \nseveral transport modes. For more details on how to [get to Lisbon](/info/gettingToLisbon.html), \n[to the venue](/info/gettingHere.html) and [around the city](/info/gettingAround.html), check the\nrespective pages.\n\n![](https://www.igot.ulisboa.pt/sites/default/files/styles/imagem_banner_grande/public/images/\nimage_focal_point/2022-09/258-9487dbb71c4495cae503c1c2fc4f2c68.png?h=7097b478&itok=jzGbW0-5)\n{.preview-image}\n\n\nSidebar for simpler navigation _quarto.yml\nwebsite:\n  sidebar:\n    - id: info\n      title: \"Practical info\"\n      collapse-level: 2\n      contents:\n        - info/venue.qmd\n        - info/gettingHere.qmd\n        - info/gettingAround.qmd\n        - info/gettingToLisbon.qmd\n        - info/accommodation.qmd\n        - info/guides.qmd\n\n\nStyle improvements styles/theme.scss\n.sidebar-item {\n    border: 1px solid #cd7eabff;\n    border-radius: 32px;\n    padding: 6px;\n    padding-left: 12px;\n    text-wrap: wrap;\n\n    &:has(a.active) {background-color: #cd7eabff;}\n    &:has(a.active) .sidebar-item-text span {color: #ffffff!important;}\n    &:hover{text-decoration: underline;}\n\n    .active {font-weight: bold;}\n\n    .sidebar-item-text {\n        span {color: black!important;}\n    }\n}"
   }
 ]
