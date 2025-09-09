@@ -1,0 +1,104 @@
+---
+title: "Habits"
+author: "John Doe"
+format: 
+  revealjs:
+    footer: "Footer text"
+
+# Based on https://quarto.org/docs/presentations/revealjs/
+---
+
+# In the morning ^[A footnote]
+
+<br/><br/><br/>
+
+::: aside
+This slide has speaker notes 📝
+:::
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+## Getting up (with pause)
+
+- Turn off alarm
+- Get out of bed
+
+. . .
+
+(Beath 🍃)
+
+. . . 
+
+- Go to the bathroom
+
+## Leaving home (incremental list)
+
+::: {.incremental}
+- Walking to the boat station 🚶
+- Getting on the boat ⛵
+- Walking to metro 🚶
+- Getting on the metro 🚇
+- Walking to IST 🚶
+:::
+
+# At night 
+
+---
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+### Getting home
+
+1. Bike to Cais do Sodré 🚲
+2. Getting on the boat ⛵
+3. Bus home 🚍
+
+> Width 60%
+
+:::
+
+::: {.column width="40%"}
+
+### Going to sleep 
+
+- Get in bed
+- Count sheep
+
+> Width 40%
+
+:::
+
+::::
+
+---
+
+At night we don't need titles, let's try to be quiet and do not disturb 🌚
+
+## Nighty night 💤 {.smaller}
+
+We are using `.smaller` modifier so that the content of this slide is smaller and we do less noise during the night...
+
+# Summing up
+
+## An infinite list (scrollable) {.scrollable}
+
+- Wake up
+- Get out of bed
+- Go to the bathroom
+- Walking to the boat station 🚶
+- Getting on the boat ⛵
+- Walking to metro 🚶
+- Getting on the metro 🚇
+- Walking to IST 🚶
+- Bike to Cais do Sodré 🚲
+- Getting on the boat ⛵
+- Bus home 🚍
+- Get in bed
+- Count sheep
+- Wake up
+- Get out of bed
+
