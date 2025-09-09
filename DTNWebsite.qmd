@@ -1,8 +1,10 @@
 ---
-title: "Making a website with Quarto"
-author: "Gonçalo Matos"
 format: revealjs
 ---
+
+# Making a website with Quarto  {background-image="images/quarto_background_2.jpg" style="text-align: center;color: #FFFFFF;"}
+
+By Gonçalo Matos
 
 # {background-iframe="https://www.dtnlisbon.pt/"}
 
