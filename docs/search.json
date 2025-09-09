@@ -54,5 +54,47 @@
     "title": "Making a website with Quarto",
     "section": "",
     "text": "Plain text markdown, with a tweak 🤫 index.qmd\n---\ntitle: \"&lt;span class='text-hidden'&gt;EIT Urban Mobility DTN Annual Forum 2025&lt;/span&gt;&lt;img\"\nsidebar: false\nimage: \"/images/backgrounds/dtn.png\"\nformat:\n  html:\n    page-layout: custom\n    css: styles/home.css\n    include-before-body: html/home/header.html\n---\n\nThe DTN Annual Forum is the DTN’s annual flagship event that gathers experts, scholars, and industry\nleaders from around the world to discuss the latest advancements in urban mobility. This vibrant forum\noffers participants an opportunity to present their research, engage in insightful discussions, and\nfoster collaborations.\n\n\nAdding custom HTML before page content assets/timer.html\n\n\n\nCreated with ChatGPT"
+  },
+  {
+    "objectID": "paper.html",
+    "href": "paper.html",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "",
+    "text": "Interesting topic."
+  },
+  {
+    "objectID": "paper.html#introduction",
+    "href": "paper.html#introduction",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "",
+    "text": "Interesting topic."
+  },
+  {
+    "objectID": "paper.html#sec-data-methods",
+    "href": "paper.html#sec-data-methods",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "2 Methodology",
+    "text": "2 Methodology\nThe methodology is presented at Figure 1, adapted from (cordera_good_2024?).\n\n\n\n\n\n\nFigure 1: Methodology diagram"
+  },
+  {
+    "objectID": "paper.html#results",
+    "href": "paper.html#results",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "3 Results",
+    "text": "3 Results"
+  },
+  {
+    "objectID": "paper.html#conclusion",
+    "href": "paper.html#conclusion",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "4 Conclusion",
+    "text": "4 Conclusion"
+  },
+  {
+    "objectID": "paper.html#references",
+    "href": "paper.html#references",
+    "title": "Through the Bus Drivers’ Eyes: Linking Operational Data and Drivers’ Perspectives to Network Monitoring and Planning",
+    "section": "References",
+    "text": "References"
   }
 ]
